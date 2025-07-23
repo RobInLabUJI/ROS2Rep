@@ -1,5 +1,5 @@
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription
+from launch.actions import IncludeLaunchDescription, TimerAction
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from ament_index_python.packages import get_package_share_directory
 import os
@@ -14,11 +14,16 @@ def generate_launch_description():
         PythonLaunchDescriptionSource(mtc_demo_launch)
     )
     
-    mtc_demo_minimal = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(mtc_demo_minimal_launch)
+    mtc_minimal_delayed = TimerAction(
+        period=5.0,  # Delay in seconds
+        actions=[
+            IncludeLaunchDescription(
+                PythonLaunchDescriptionSource(mtc_minimal_launch)
+            )
+        ]
     )
     
     return LaunchDescription([
         mtc_demo,
-        mtc_demo_minimal
+        mtc_minimal_delayed
     ])
