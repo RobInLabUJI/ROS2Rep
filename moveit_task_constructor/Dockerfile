@@ -27,3 +27,7 @@ RUN apt-get update && apt-get install -y \
 
 ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 
+COPY demo.launch.py /root/.
+
+CMD ["bash", "-c", "source /ws_moveit2/install/setup.bash && ros2 launch /root/demo.launch.py"]
+
