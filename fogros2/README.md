@@ -20,3 +20,6 @@
             Source coding;Video compression;Planning},
   doi={10.1109/ICRA48891.2023.10161307}}
 ```
+
+## Status
+2025/07/24: Builds without errors. Not tested ([AWS credentials](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) needed).
