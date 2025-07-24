@@ -19,3 +19,6 @@
             Semantics;Buildings;Search problems;Trajectory;Intelligent robots},
   doi={10.1109/IROS58592.2024.10802196}}
 ```
+
+## Status
+2025/07/24: Building errors, partial image uploaded (see comments in [Dockerfile](https://github.com/RobInLabUJI/ROS2Rep/blob/main/l3gs/Dockerfile)).
