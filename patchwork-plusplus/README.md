@@ -18,3 +18,7 @@
             Fitting;Reflection;Sensors},
   doi={10.1109/IROS47612.2022.9981561}}
 ```
+
+## Status
+2025/07/24: Building and execution without errors.
+![Screenshot](./Screenshot%20at%202025-07-24%2015-56-42.png)
