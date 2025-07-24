@@ -26,7 +26,9 @@ RUN cd /colcon_ws/src \
 
 SHELL ["/bin/bash", "-c"] 
 
-RUN cd /colcon_ws \
- && source /opt/ros/humble/setup.bash \
- && colcon build
+#RUN cd /colcon_ws \
+# && source /opt/ros/humble/setup.bash \
+# && colcon build
+
+CMD ["bash", "-c", "source /opt/ros/humble/setup.bash && cd /colcon_ws && colcon build || bash"]
 
