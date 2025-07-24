@@ -18,3 +18,10 @@
   doi={10.1109/IROS47612.2022.9981661}}
 
 ```
+
+## Status
+2025/07/24: Compilation errors; Docker building errors. 
+Docker image built from the [original author's image](https://hub.docker.com/r/andrejorsula/drl_grasping).
+Tested with random agents.
+
+![Screenshot](./Screenshot%20at%202025-07-24%2015-34-06.png)
