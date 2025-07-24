@@ -18,3 +18,6 @@
             Collaboration; Computational efficiency; Sensors; Servers},
   doi={10.1109/ICRA57147.2024.10611672}}
 ```
+
+## Status
+2025/07/24: Building and execution without errors, but [RViz does not show the topics of the bag](https://github.com/zhongshp/Co-LRIO/issues/7).
