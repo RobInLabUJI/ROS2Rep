@@ -16,3 +16,7 @@
   keywords={Planning;Task analysis;Robots;Trajectory;Containers;Generators;Collision avoidance},
   doi={10.1109/ICRA.2019.8793898}}
 ```
+
+## Status
+2025/07/24: Building and execution without errors.
+![Screenshot](./Screenshot%20at%202025-07-24%2015-54-17.png)
