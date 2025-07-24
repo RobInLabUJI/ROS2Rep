@@ -19,3 +19,8 @@
   doi={10.1109/ICRA57147.2024.10611172}}
 
 ```
+
+## Status
+2025/07/24: Builds withour errors after replacing [norlab_controllers_msgs](https://github.com/norlab-ulaval/norlab_controllers_msgs) 
+with [norlab_controllers_ros](https://github.com/norlab-ulaval/norlab_controllers_ros). 
+Execution not tested due to the lack of a simulation setup or bag files.
