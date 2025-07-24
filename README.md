@@ -1,6 +1,8 @@
 # ROS2Rep
 ROS2 Reproducible Research Repositories
 
+Reproducible [Docker](https://www.docker.com/) images of [ROS 2](https://www.ros.org/) code repositories from [major RAS conferences](https://www.ieee-ras.org/conferences-workshops) between 2019 and 2024.
+
 ## Prerequisites
 * [Docker](https://docs.docker.com/engine/install/ubuntu/)
 * [OSRF/Rocker](https://github.com/osrf/rocker)
