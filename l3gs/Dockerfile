@@ -12,12 +12,18 @@ RUN mamba create -n droid_slam_ros_env python=3.10.12 -y \
  && mamba activate droid_slam_ros_env \
  && python -m pip install --upgrade pip \
  && pip uninstall torch torchvision functorch tinycudann \
- && pip install torch==2.0.1+cu118 torchvision==0.15.2+cu118 --extra-index-url https://download.pytorch.org/whl/cu118 \
- && conda install -c "nvidia/label/cuda-11.8.0" cuda-toolkit -y \
+ && pip install torch==2.0.1+cu118 torchvision==0.15.2+cu118 --extra-index-url https://download.pytorch.org/whl/cu118
+ 
+RUN mamba activate droid_slam_ros_env \
  && pip install setuptools==69.5.1 # ImportError: cannot import name packaging from pkg_resources  \
  && pip install ninja git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch \
  && pip install nerfstudio
 
+# Generates a layer of size 11.1GB > grch.io limit (10GB)
+#RUN mamba activate droid_slam_ros_env \
+# && conda install -c "nvidia/label/cuda-11.8.0" cuda-toolkit -y
+
+# Fails
 #RUN conda config --env --add channels conda-forge \
 # && conda config --env --add channels robostack \
 # && conda config --env --add channels robostack-humble \
